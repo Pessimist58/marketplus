@@ -11,7 +11,7 @@ MarketPlus is a Market automation application for school project.
 
 ## Authors
 
-[Yunus Kaan](https://github.com/Pessimist58) 
-[Rabianur](https://github.com/rabi4nur) 
+[Kaan](https://github.com/Pessimist58) 
+[Rabia](https://github.com/rabi4nur) 
 [Tuğcan](https://github.com/tugcansluu) 
 [Zeynep](https://github.com/zeynephazndr) 
