@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92C8EC0F-48F0-4B2D-83F9-1F058A39CDF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>marketplus</RootNamespace>
+    <AssemblyName>marketplus</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=0.1.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AdminAnaSayfaNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminAnaSayfaNew.Designer.cs">
+      <DependentUpon>AdminAnaSayfaNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminEkle.Designer.cs">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminKargoİslemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminKargoİslemi.Designer.cs">
+      <DependentUpon>AdminKargoİslemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminListele.Designer.cs">
+      <DependentUpon>AdminListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminSil.Designer.cs">
+      <DependentUpon>AdminSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Adminİadeİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Adminİadeİslemleri.Designer.cs">
+      <DependentUpon>Adminİadeİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\iadeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\iadeForm.Designer.cs">
+      <DependentUpon>iadeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerAnaSayfa.Designer.cs">
+      <DependentUpon>KasiyerAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerUrunArama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerUrunArama.Designer.cs">
+      <DependentUpon>KasiyerUrunArama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerUrunEkle.Designer.cs">
+      <DependentUpon>KasiyerUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerUrunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerUrunListele.Designer.cs">
+      <DependentUpon>KasiyerUrunListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Kasiyerİadeİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Kasiyerİadeİslemleri.Designer.cs">
+      <DependentUpon>Kasiyerİadeİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MusteriAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriAnaSayfa.Designer.cs">
+      <DependentUpon>MusteriAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerKargoislemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerKargoislemi.Designer.cs">
+      <DependentUpon>KasiyerKargoislemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KargoTakipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KargoTakipForm.Designer.cs">
+      <DependentUpon>KargoTakipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerArama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerArama.Designer.cs">
+      <DependentUpon>KasiyerArama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerEkleme.Designer.cs">
+      <DependentUpon>KasiyerEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerGiris.Designer.cs">
+      <DependentUpon>KasiyerGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasiyerListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasiyerListele.Designer.cs">
+      <DependentUpon>KasiyerListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sepetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sepetim.Designer.cs">
+      <DependentUpon>Sepetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sifremiunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sifremiunuttum.Designer.cs">
+      <DependentUpon>Sifremiunuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\splashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\splashScreen.Designer.cs">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminUrunArama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminUrunArama.Designer.cs">
+      <DependentUpon>AdminUrunArama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminUrunEkle.Designer.cs">
+      <DependentUpon>AdminUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UrunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UrunListele.Designer.cs">
+      <DependentUpon>UrunListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciProfili.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciProfili.Designer.cs">
+      <DependentUpon>KullaniciProfili.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ödeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ödeme.Designer.cs">
+      <DependentUpon>ödeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AdminAnaSayfaNew.resx">
+      <DependentUpon>AdminAnaSayfaNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminEkle.resx">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminKargoİslemi.resx">
+      <DependentUpon>AdminKargoİslemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminListele.resx">
+      <DependentUpon>AdminListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminSil.resx">
+      <DependentUpon>AdminSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Adminİadeİslemleri.resx">
+      <DependentUpon>Adminİadeİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\iadeForm.resx">
+      <DependentUpon>iadeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerAnaSayfa.resx">
+      <DependentUpon>KasiyerAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerUrunArama.resx">
+      <DependentUpon>KasiyerUrunArama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerUrunEkle.resx">
+      <DependentUpon>KasiyerUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerUrunListele.resx">
+      <DependentUpon>KasiyerUrunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kasiyerİadeİslemleri.resx">
+      <DependentUpon>Kasiyerİadeİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriAnaSayfa.resx">
+      <DependentUpon>MusteriAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerKargoislemi.resx">
+      <DependentUpon>KasiyerKargoislemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KargoTakipForm.resx">
+      <DependentUpon>KargoTakipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerArama.resx">
+      <DependentUpon>KasiyerArama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerEkleme.resx">
+      <DependentUpon>KasiyerEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerGiris.resx">
+      <DependentUpon>KasiyerGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasiyerListele.resx">
+      <DependentUpon>KasiyerListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sepetim.resx">
+      <DependentUpon>Sepetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sifremiunuttum.resx">
+      <DependentUpon>Sifremiunuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\splashScreen.resx">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminUrunArama.resx">
+      <DependentUpon>AdminUrunArama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminUrunEkle.resx">
+      <DependentUpon>AdminUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UrunListele.resx">
+      <DependentUpon>UrunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciProfili.resx">
+      <DependentUpon>KullaniciProfili.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ödeme.resx">
+      <DependentUpon>ödeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marketpluslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closebutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazedbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registerbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userprofile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconurun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marketpluslogos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ürünekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasiyericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uccizgiicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admingirisbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasiyerbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KasiyerNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atistirmalikicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecekicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dondurmaicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meyvesebzeicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elektronikicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bakimicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insanicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sepeticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kargoicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\admin_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\Adminlistele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\Kasiyer_arama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\Kasiyer_ekleme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\kasiyer_giris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\admingiris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorlu-kurye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\Adminanasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\ana_ekran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\anasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turuncu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmzbuton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\Urun_arama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urunekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\kasiyerarkaplan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urunliste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\odeme_yeri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasiyer_ekran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun_ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K_urunarama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turuncu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K_urunarama1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kargotakip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kutu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri_donem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Arkaplan\adminmain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cks.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
