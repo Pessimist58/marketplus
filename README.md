@@ -3,7 +3,7 @@ MarketPlus is a Market automation application for school project.
  
 ## Screenshots
 <img src="/images/LoginScreen.png" width="400"/>
-<img src="[/images/LoginScreen.png](https://github.com/Pessimist58/marketplus/blob/master/images/Ana%20Ekran.PNG)" width="400"/>
+<img src="[/images/Ana%20Ekran.PNG](https://github.com/Pessimist58/marketplus/blob/master/images/Ana%20Ekran.PNG)" width="400"/>
 <img src="/images/MainScreen.png" width="400"/>
 <img src="/images/UserProfileScreen.png" width="400"/>
 <img src="/images/SepetScreen.png" width="400"/>
