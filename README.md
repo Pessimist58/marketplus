@@ -1,13 +1,16 @@
 ## About MarketPlus App
+MarketPlus, okul projesi için bir Market otomasyon uygulamasıdır.
+<br>
 MarketPlus is a Market automation application for school project.
+## Video
  
 ## Screenshots
 <img src="/images/LoginScreen.png" width="400"/>
 <img src="/images/AnaEkran.PNG" width="400"/>
-<img src="images/Kayıt Ekranı.PNG" width="400"/>
-
-<img src="/images/UserProfileScreen.png" width="400"/>
+<img src="/images/Kayıt Ekranı.PNG" width="400"/>
+<img src="/images/Profil Ekranı.PNG" width="400"/>
 <img src="/images/SepetScreen.png" width="400"/>
+<img src="/images/Kart Ödeme Ekran.PNG" width="400"/>
 <img src="/images/IadeScreen.png" width="400"/>
 <img src="/images/KargoTakipScreen.png" width="400"/>
 
