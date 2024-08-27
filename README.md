@@ -4,7 +4,8 @@ MarketPlus, okul projesi için bir Market otomasyon uygulamasıdır.
 MarketPlus is a Market automation application for school project.
 ## Video
 
-![Video](https://github.com/user-attachments/assets/5031130b-4522-4d2c-9867-58176cf15b5b)](https://www.youtube.com/watch?v=Q1737p4GuNw)
+[![Video](https://github.com/user-attachments/assets/5031130b-4522-4d2c-9867-58176cf15b5b)](https://www.youtube.com/watch?v=Q1737p4GuNw)
+
 
 
 
