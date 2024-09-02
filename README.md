@@ -28,6 +28,7 @@ Market automation made using Visual studio Form and C#. Designed without changin
 ## Authors
 
 [Kaan](https://github.com/Pessimist58) 
+[Muhammet](https://github.com/Mnakis) 
 [Rabia](https://github.com/rabi4nur) 
 [Tuğcan](https://github.com/tugcansluu) 
 [Zeynep](https://github.com/zeynephazndr) 
