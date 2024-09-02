@@ -2,6 +2,7 @@
 MarketPlus, okul projesi için bir Market otomasyon uygulamasıdır.
 Visual studio Form ve C# kullanılarak yapılmış Market otomasyonu. Görsel tasarım ilkeleri dikkate alınarak tasarlanmıştır. Çalışma SQL Database Server Programını kullanılarak hazırlanmıştır. 
 <br>
+
 MarketPlus is a Market automation application for school project.
 Market automation made using Visual studio Form and C#. Designed without changing the visual design frameworks. Created using the working SQL Database Server Program.
 ## Video/Click on the picture and go to the video
